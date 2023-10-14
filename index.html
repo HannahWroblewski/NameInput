@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Player 1, enter your name here:
+        <input type= "text" id="p1name" name="p1name"> <br> <br>
+        Player 2, enter your name here: <input type= "text" id="p2name" name="p2name"> <br> <br> <br>
+        <input type = "button" onclick="showNames()" value="submit">
+        <span id="show"></span>
+    </form>
+
+    <script>
+
+function showNames(e){
+    var firstName= document.getElementById("p1name").value;
+    var secondName = document.getElementById("p2name").value;
+    document.getElementById("show").innerText = "Player 1:" + " " + firstName + ", " + "Player 2:" + " " + secondName;      
+}
+    </script>
+</body>
+</html>
